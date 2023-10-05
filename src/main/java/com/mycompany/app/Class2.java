@@ -1,21 +1,6 @@
 package com.mycompany.app;
 
-/**
- * Hello world!
- *
- */
-public class App
-{
-    public static void main( String[] args )
-    {
-
-
-
-
-
-        System.out.println( "Hello World!" );
-    }
-
+public class Class2 {
     public boolean ifYes(String s) {
         return "Yes".equals(s);
     }
@@ -32,15 +17,12 @@ public class App
     public boolean ifYes4(String s) {
         return "Yes".equals(s);
     } public boolean ifYes5(String s) {
-    return "Yes".equals(s);
-}
+        return "Yes".equals(s);
+    }
     public boolean ifYes6(String s) {
         return "Yes".equals(s);
     } public boolean ifYes7(String s) {
-    return "Yes".equals(s);
-}
-
-
-
+        return "Yes".equals(s);
+    }
 
 }
