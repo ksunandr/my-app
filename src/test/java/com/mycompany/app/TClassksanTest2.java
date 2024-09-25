@@ -9,7 +9,7 @@ class TClassksanTest2 {
 
     @Test
     void testIfYes() {
-        assertFalse((new TClass()).ifYes("foo"));
-        assertTrue((new TClass()).ifYes("Yes"));
+        assertFalse((new TClass()).ifYes7("foo"));
+        assertTrue((new TClass()).ifYes7("ifYes7"));
     }
 }
