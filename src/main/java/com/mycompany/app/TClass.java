@@ -13,7 +13,7 @@ public class TClass {
         return "Yes".equals(s);
     }
     public boolean ifYes2(String s) {
-        return "ifYes2".equals(s);
+        return "Yes".equals(s);
     }
     public boolean ifYes3(String s) {
         return "ifYes3".equals(s);
