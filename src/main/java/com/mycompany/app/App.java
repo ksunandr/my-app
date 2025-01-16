@@ -26,6 +26,11 @@ public class App
     }
 
 
+    public boolean ifYes2(String s) {
+        return "Yes".equals(s);
+    }
+
+
 //    /**
 //     * Masks an email address to obscure sensitive information while retaining enough detail for
 //     * identification purposes
