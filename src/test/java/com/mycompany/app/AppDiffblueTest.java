@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class AppDiffblueTest {
+
     /**
      * Test {@link App#ifYes(String)}.
      * <ul>
@@ -38,4 +39,5 @@ class AppDiffblueTest {
         // Arrange, Act and Assert
         assertTrue((new App()).ifYes("Yes"));
     }
+
 }
