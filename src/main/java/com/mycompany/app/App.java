@@ -29,6 +29,9 @@ public class App
     public boolean ifYes2(String s) {
         return "Yes".equals(s);
     }
+    public boolean ifYes3(String s) {
+        return "Yes".equals(s);
+    }
 
 
 //    /**
