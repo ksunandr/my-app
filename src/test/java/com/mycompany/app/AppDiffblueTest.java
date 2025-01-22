@@ -75,4 +75,38 @@ class AppDiffblueTest {
         // Arrange, Act and Assert
         assertTrue((new App()).ifYes2("Yes"));
     }
+
+    /**
+     * Test {@link App#ifYes3(String)}.
+     * <ul>
+     *   <li>When {@code foo}.</li>
+     *   <li>Then return {@code false}.</li>
+     * </ul>
+     * <p>
+     * Method under test: {@link App#ifYes3(String)}
+     */
+    @Test
+    @DisplayName("Test ifYes3(String); when 'foo'; then return 'false'")
+    @Tag("MaintainedByDiffblue")
+    void testIfYes3_whenFoo_thenReturnFalse() {
+        // Arrange, Act and Assert
+        assertFalse((new App()).ifYes3("foo"));
+    }
+
+    /**
+     * Test {@link App#ifYes3(String)}.
+     * <ul>
+     *   <li>When {@code Yes}.</li>
+     *   <li>Then return {@code true}.</li>
+     * </ul>
+     * <p>
+     * Method under test: {@link App#ifYes3(String)}
+     */
+    @Test
+    @DisplayName("Test ifYes3(String); when 'Yes'; then return 'true'")
+    @Tag("MaintainedByDiffblue")
+    void testIfYes3_whenYes_thenReturnTrue() {
+        // Arrange, Act and Assert
+        assertTrue((new App()).ifYes3("Yes"));
+    }
 }
