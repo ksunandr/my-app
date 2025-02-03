@@ -8,37 +8,73 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 class AppDiffblueTest {
-    /**
-     * Test {@link App#ifYes(String)}.
-     * <ul>
-     *   <li>When {@code foo}.</li>
-     *   <li>Then return {@code false}.</li>
-     * </ul>
-     * <p>
-     * Method under test: {@link App#ifYes(String)}
-     */
-    @Test
-    @DisplayName("Test ifYes(String); when 'foo'; then return 'false'")
-    @Tag("MaintainedByDiffblue")
-    void testIfYes_whenFoo_thenReturnFalse() {
-        // Arrange, Act and Assert
-        assertFalse((new App()).ifYes("foo"));
-    }
 
-    /**
-     * Test {@link App#ifYes(String)}.
-     * <ul>
-     *   <li>When {@code Yes}.</li>
-     *   <li>Then return {@code true}.</li>
-     * </ul>
-     * <p>
-     * Method under test: {@link App#ifYes(String)}
-     */
-    @Test
-    @DisplayName("Test ifYes(String); when 'Yes'; then return 'true'")
-    @Tag("MaintainedByDiffblue")
-    void testIfYes_whenYes_thenReturnTrue() {
-        // Arrange, Act and Assert
-        assertTrue((new App()).ifYes("Yes"));
-    }
+  /**
+   * Test {@link App#ifYes(String)}.
+   * <ul>
+   *   <li>When {@code foo}.</li>
+   *   <li>Then return {@code false}.</li>
+   * </ul>
+   * <p>
+   * Method under test: {@link App#ifYes(String)}
+   */
+  @Test
+  @DisplayName("Test ifYes(String); when 'foo'; then return 'false'")
+  @Tag("MaintainedByDiffblue")
+  void testIfYes_whenFoo_thenReturnFalse() {
+    // Arrange, Act and Assert
+    assertFalse((new App()).ifYes("foo"));
+  }
+
+  /**
+   * Test {@link App#ifYes(String)}.
+   * <ul>
+   *   <li>When {@code Yes}.</li>
+   *   <li>Then return {@code true}.</li>
+   * </ul>
+   * <p>
+   * Method under test: {@link App#ifYes(String)}
+   */
+  @Test
+  @DisplayName("Test ifYes(String); when 'Yes'; then return 'true'")
+  @Tag("MaintainedByDiffblue")
+  void testIfYes_whenYes_thenReturnTrue() {
+    // Arrange, Act and Assert
+    assertTrue((new App()).ifYes("Yes"));
+  }
+
+  /**
+   * Test {@link App#ifYes2(String)}.
+   * <ul>
+   *   <li>When {@code foo}.</li>
+   *   <li>Then return {@code false}.</li>
+   * </ul>
+   * <p>
+   * Method under test: {@link App#ifYes2(String)}
+   */
+  @Test
+  @DisplayName("Test ifYes2(String); when 'foo'; then return 'false'")
+  @Tag("MaintainedByDiffblue")
+  void testIfYes2_whenFoo_thenReturnFalse() {
+    // Arrange, Act and Assert
+    assertFalse((new App()).ifYes2("foo"));
+  }
+
+  /**
+   * Test {@link App#ifYes2(String)}.
+   * <ul>
+   *   <li>When {@code Yes}.</li>
+   *   <li>Then return {@code true}.</li>
+   * </ul>
+   * <p>
+   * Method under test: {@link App#ifYes2(String)}
+   */
+  @Test
+  @DisplayName("Test ifYes2(String); when 'Yes'; then return 'true'")
+  @Tag("MaintainedByDiffblue")
+  void testIfYes2_whenYes_thenReturnTrue() {
+    // Arrange, Act and Assert
+    assertTrue((new App()).ifYes2("Yes"));
+  }
+
 }
