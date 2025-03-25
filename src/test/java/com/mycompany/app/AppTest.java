@@ -2,12 +2,13 @@ package com.mycompany.app;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import com.diffblue.cover.annotations.MethodsUnderTest;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-class AppDiffblueTest {
+class AppTest {
+
   /**
    * Test {@link App#ifYes(String)}.
    * <ul>
@@ -19,8 +20,7 @@ class AppDiffblueTest {
    */
   @Test
   @DisplayName("Test ifYes(String); when 'foo'; then return 'false'")
-  @Tag("MaintainedByDiffblue")
-  @MethodsUnderTest({"boolean App.ifYes(String)"})
+  
   void testIfYes_whenFoo_thenReturnFalse() {
     // Arrange, Act and Assert
     assertFalse((new App()).ifYes("foo"));
@@ -37,8 +37,7 @@ class AppDiffblueTest {
    */
   @Test
   @DisplayName("Test ifYes(String); when 'Yes'; then return 'true'")
-  @Tag("MaintainedByDiffblue")
-  @MethodsUnderTest({"boolean App.ifYes(String)"})
+  
   void testIfYes_whenYes_thenReturnTrue() {
     // Arrange, Act and Assert
     assertTrue((new App()).ifYes("Yes"));
@@ -55,8 +54,7 @@ class AppDiffblueTest {
    */
   @Test
   @DisplayName("Test ifYes2(String); when 'foo'; then return 'false'")
-  @Tag("MaintainedByDiffblue")
-  @MethodsUnderTest({"boolean App.ifYes2(String)"})
+  
   void testIfYes2_whenFoo_thenReturnFalse() {
     // Arrange, Act and Assert
     assertFalse((new App()).ifYes2("foo"));
@@ -73,46 +71,10 @@ class AppDiffblueTest {
    */
   @Test
   @DisplayName("Test ifYes2(String); when 'Yes'; then return 'true'")
-  @Tag("MaintainedByDiffblue")
-  @MethodsUnderTest({"boolean App.ifYes2(String)"})
+  
   void testIfYes2_whenYes_thenReturnTrue() {
     // Arrange, Act and Assert
     assertTrue((new App()).ifYes2("Yes"));
   }
 
-  /**
-   * Test {@link App#ifYes3(String)}.
-   * <ul>
-   *   <li>When {@code foo}.</li>
-   *   <li>Then return {@code false}.</li>
-   * </ul>
-   * <p>
-   * Method under test: {@link App#ifYes3(String)}
-   */
-  @Test
-  @DisplayName("Test ifYes3(String); when 'foo'; then return 'false'")
-  @Tag("MaintainedByDiffblue")
-  @MethodsUnderTest({"boolean App.ifYes3(String)"})
-  void testIfYes3_whenFoo_thenReturnFalse() {
-    // Arrange, Act and Assert
-    assertFalse((new App()).ifYes3("foo"));
-  }
-
-  /**
-   * Test {@link App#ifYes3(String)}.
-   * <ul>
-   *   <li>When {@code Yes}.</li>
-   *   <li>Then return {@code true}.</li>
-   * </ul>
-   * <p>
-   * Method under test: {@link App#ifYes3(String)}
-   */
-  @Test
-  @DisplayName("Test ifYes3(String); when 'Yes'; then return 'true'")
-  @Tag("MaintainedByDiffblue")
-  @MethodsUnderTest({"boolean App.ifYes3(String)"})
-  void testIfYes3_whenYes_thenReturnTrue() {
-    // Arrange, Act and Assert
-    assertTrue((new App()).ifYes3("Yes"));
-  }
 }

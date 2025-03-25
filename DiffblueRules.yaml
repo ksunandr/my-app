@@ -1,0 +1,5 @@
+java.lang.String:
+  - immediate: "KSAN"
+    parameter: s
+    method: ifYes
+    class: com.mycompany.app.TClass

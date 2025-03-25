@@ -9,11 +9,11 @@ public class TClass {
         return this.getClass().getName();
     }
 
-    public boolean ifYes(String s) {
-        return "Yes".equals(s);
+    public boolean ifYes(String s1) {
+        return "Yes".equals(s1);
     }
-    public boolean ifYes2(String s) {
-        return "Yes".equals(s);
+    public boolean ifYes2ksakakakakkakakakakkakakaka(String s1) {
+        return "Yes".equals(s1);
     }
     public boolean ifYes3(String s) {
         return "ifYes3".equals(s);
