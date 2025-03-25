@@ -1,6 +1,8 @@
 package com.mycompany.app;
 
 
+import com.diffblue.cover.annotations.InTestsMock;
+
 /**
  * Hello world!
  *
@@ -24,6 +26,17 @@ public class App
     public boolean ifYes(String s) {
         return "Yes".equals(s);
     }
+
+     @InTestsMock(Number.class)
+    public boolean ifOne(Number n) {
+        return n.intValue() == 1;
+    }
+
+    @InTestsMock(Number.class)
+    public static String ifOne2(Number number) {
+        return String.valueOf(number.intValue());
+    }
+
 
 
     public boolean ifYes2(String s) {
