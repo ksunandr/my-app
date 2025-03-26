@@ -1,12 +1,2 @@
-#java.lang.String:
-#  - immediate: "KSAN"
-#    parameter: s
-#    method: ifYes
-##    class: com.mycompany.app.TClass
-#java.lang.String:
-#    - factory:
-#        method: ifYes
-#        class: com.mycompany.app.TClass
-
-java.lang.Number:
-    - immediate: 1
+java.lang.String:
+  - immediate: "KIT"

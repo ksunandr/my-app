@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
 
-        System.out.println( "Kseniia Andreeva <kseniia.andreeva@diffblue.com>" );
+        System.out.println( "main test" );
 //        System.out.println( maskString("Kseniia Andreeva")+" " +maskEmail("kseniia.andreeva@diffblue.com"));
 //
 //        System.out.println( "L Y <the@mail.ua>\n" );
@@ -35,15 +35,6 @@ public class App
     @InTestsMock(Number.class)
     public static String ifOne2(Number number) {
         return String.valueOf(number.intValue());
-    }
-
-
-
-    public boolean ifYes2(String s) {
-        return "Yes".equals(s);
-    }
-    public boolean ifYes3(String s) {
-        return "Yes".equals(s);
     }
 
 
