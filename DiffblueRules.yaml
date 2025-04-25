@@ -1,2 +1,23 @@
-java.lang.String:
-  - immediate: "KIT"
+com.mycompany.app.DTOClass:
+  - factory:
+      method: com.mycompany.app.Factory.createDTOClassForTest:(Ljava/lang/String;)
+      params: [ "1-56619-909-3" ]
+#  - factory:
+#      method: com.mycompany.app.DTOClass.<init>(Ljava/lang/String;Ljava/lang/String;)
+#      params: [ "1-56619-909-3" ]
+
+#  com.mycompany.app.Factory.createDTOClassForTest
+#  com.mycompany.app.DTOClass.<init>
+#
+#
+#
+#
+#  com.mycompany.app.Factory.createDTOClassForTest(java.lang.String, java.lang.String)
+#  com.mycompany.app.Factory.createDTOClassForTest(java.lang.String)
+#  com.mycompany.app.Factory.createDTOClassForTest()
+#
+#  -
+#  -com.mycompany.app.Factory.createDTOClassForTest
+#  -
+#  - com.mycompany.app.DTOClass.DTOClass()
+#  - com.mycompany.app.DTOClass.DTOClass(java.lang.String)
