@@ -1,7 +1,10 @@
 com.mycompany.app.DTOClass:
   - factory:
-      method: com.mycompany.app.Factory.createDTOClassForTest:(Ljava/lang/String;)
-      params: [ "1-56619-909-3" ]
+      method: com.mycompany.app.Factory.createDTOClassForTest:([Ljava/lang/String;)
+      params: [[ "1-56619-909-3", "1-56619-909-4"]]
+#  - factory:
+#      method: com.mycompany.app.Factory.createDTOClassForTest:(Ljava/lang/String;)
+#      params: [ "1-56619-909-3", "1-56619-909-4" ]
 #  - factory:
 #      method: com.mycompany.app.DTOClass.<init>(Ljava/lang/String;Ljava/lang/String;)
 #      params: [ "1-56619-909-3" ]
