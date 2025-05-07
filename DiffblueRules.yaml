@@ -3,7 +3,7 @@ com.mycompany.app.DTOClass:
 #      method: com.mycompany.app.Factory.forTest
 #      params: [ 1 ]
   - factory:
-      method: com.mycompany.app.DTOClass.<init>:Ljava/lang/String;Ljava/lang/String;)
+      method: com.mycompany.app.DTOClass.<init>:(Ljava/lang/String;Ljava/lang/String;)
       params: [ "test", "test1"]
 #  - factory:
 #      method: com.mycompany.app.Factory.forTest1
