@@ -17,6 +17,7 @@ public class DTOClass {
     public DTOClass(Integer[][] s, String s1, Integer s2 ) {
         System.out.println(s2);
         this.fullName = s[0][1]+s[1][0]+s1;
+        this.age = s2;
     }
 
     public DTOClass(Integer[][] s, String s1 ) {
@@ -34,11 +35,28 @@ public class DTOClass {
     public DTOClass(String s, String s1) {
         this.fullName =s+ s1;
     }
+    public DTOClass(Integer s, Integer s1) {
+        this.fullName =""+s+ s1;
+    }
+
 
     public String getFullName() {
         return fullName;
     }
+    public Integer getInt() {
+        return fullName.indexOf(".");
+    }
 
 
     public String fullName;
+    private int age;
+
+
+    public DTOClass createDTOClass(){
+        return new DTOClass("");
+    }
+
+    public int getAge() {
+        return age;
+    }
 }

@@ -1,10 +1,10 @@
 package com.mycompany.app;
 
-public class Factory {
+public class Factory extends SuperFactory {
 
 
 
-    public static DTOClass forTest() {
+    public static DTOClass methodWithNoParams() {
 
         DTOClass dtoClass = new DTOClass();
 
@@ -12,17 +12,7 @@ public class Factory {
         return dtoClass;
     }
 
-
-
-   public static DTOClass forTest(String[][] s, int i) {
-
-       DTOClass dtoClass = new DTOClass();
-
-       dtoClass.fullName = s[0][0]+s[1][1]+i;
-        return dtoClass;
-    }
-
-    public static DTOClass forTest(String s, String s2) {
+    public static DTOClass methodWithParams(String s, String s2) {
 
         DTOClass dtoClass = new DTOClass();
 
@@ -31,14 +21,14 @@ public class Factory {
     }
 //
 
-    public static DTOClass forTest(Integer s) {
+    public static DTOClass methodWithNoParams(Integer s) {
         DTOClass dtoClass = new DTOClass();
 
         dtoClass.fullName = s.toString();
         return dtoClass;
     }
 
-    public static DTOClass forTest(String s) {
+    public static DTOClass methodWithNoParams(String s) {
         DTOClass dtoClass = new DTOClass();
 
         dtoClass.fullName = s;
