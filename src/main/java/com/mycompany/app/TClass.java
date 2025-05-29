@@ -12,7 +12,7 @@ public class TClass {
 
 
 
-    @InTestsMock(value = DTOClass.class, method = "createDTOClass", returnValueFactory = "com.mycompany.app.Factory.methodWithParams", decision = MockDecision.REQUIRED)
+    @InTestsMock(value = DTOClass.class, method = "createDTOClass", returnValueFactory = "com.mycompany.app.Factory.methodWithNoParams", decision = MockDecision.REQUIRED)
     public boolean ifMe(DTOClass dto) {
         return dto.createDTOClass().getFullName().equals("Kseniia");
     }
