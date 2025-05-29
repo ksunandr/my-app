@@ -7,7 +7,7 @@ public class ClassTOTEST {
     @InTestsMock(
             value = UserService.class,
             method = "getName",
-            stringReturnValues = {"TestUser2"}
+            stringReturnValues = {"TestUser"}
     )
     @InTestsMock(
             value = UserService.class,
