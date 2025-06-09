@@ -59,4 +59,13 @@ public class DTOClass {
     public int getAge() {
         return age;
     }
+
+
+    @Override
+    public String toString() {
+        return "DTOClass{" +
+                "fullName='" + fullName + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
