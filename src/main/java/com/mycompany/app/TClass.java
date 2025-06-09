@@ -80,7 +80,7 @@ public class TClass {
 
 
     /**
-     * UNSUPPORTED: Factory method does not exist. decision = MockDecision.REQUIRED
+     * EXCEPTION: Factory method does not exist. decision = MockDecision.REQUIRED
      */
     @InTestsMock(value = DTOClass.class, method = "createDTOClass", throwExceptionFactory = "com.mycompany.app.Factory.testEx312", decision = MockDecision.REQUIRED)
     public boolean unsupported_throwExceptionFactory_missingMethod_required(DTOClass dto) {
@@ -88,7 +88,7 @@ public class TClass {
     }
 
     /**
-     * UNSUPPORTED: Factory method does not exist (no decision set).
+     * IGNORING: Factory method does not exist (no decision set).
      */
     @InTestsMock(value = DTOClass.class, method = "createDTOClass", throwExceptionFactory = "com.mycompany.app.Factory.testEx312")
     public boolean unsupported_throwExceptionFactory_missingMethod_default(DTOClass dto) {
@@ -109,13 +109,13 @@ public class TClass {
         return dto.createDTOClass().getFullName().equals("diffy");
     }
 
-    /** UNSUPPORTED: Factory method returns NPE with a message. */
+    /** UNSUPPORTED:  Factory method returns NullPointerException as a cause */
     @InTestsMock(value = DTOClass.class, method = "createDTOClass", throwExceptionFactory = "com.mycompany.app.Factory.testEx2WithNullPointerwithMessage", decision = MockDecision.REQUIRED)
     public boolean unsupported_throwExceptionFactory_NPE_withMessage(DTOClass dto) {
         return dto.createDTOClass().getFullName().equals("diffy");
     }
 
-    /** UNSUPPORTED: Factory method requires unsupported combination of params. */
+    /** UNSUPPORTED: Factory method returns NullPointerException as a cause . */
     @InTestsMock(value = DTOClass.class, method = "createDTOClass", throwExceptionFactory = "com.mycompany.app.Factory.testEx2WithNullPointerAndDTOClass", decision = MockDecision.REQUIRED)
     public boolean unsupported_throwExceptionFactory_NPE_withDTO(DTOClass dto) {
         return dto.createDTOClass().getFullName().equals("diffy");
