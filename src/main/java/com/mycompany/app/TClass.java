@@ -4,6 +4,13 @@ import com.diffblue.cover.annotations.InTestsMock;
 import com.diffblue.cover.annotations.MockDecision;
 
 public class TClass {
+
+
+
+
+
+
+
     /// ///////////////////////////////////
     /// the previous cases
     /// ///////////////////////////////////
@@ -14,7 +21,9 @@ public class TClass {
      */
     @InTestsMock(value = DTOClass.class, method = "getFullName", stringReturnValues = "diffy4")
     public boolean stringReturnValue_diffy4(DTOClass dto) {
-        return dto.createDTOClass().getFullName().equals("diffy");
+        return
+
+                dto.createDTOClass().getFullName().equals("diffy");
     }
 
     /**
@@ -69,12 +78,21 @@ public class TClass {
         return dto.createDTOClass().getFullName().equals("diffy");
     }
 
-    /**
-     * UNSUPPORTED: NullPointerException is a discouraged type to throw via annotations.
-     */
+
     @InTestsMock(value = DTOClass.class, method = "createDTOClass", throwException = NullPointerException.class, decision = MockDecision.REQUIRED)
     public boolean unsupported_throwException_NullPointerException(DTOClass dto) {
-        return dto.createDTOClass().getFullName().equals("diffy");
+        try {
+            return dto.createDTOClass().getFullName().equals("diffy");
+        }catch(NullPointerException e){
+            return false;
+        }
+    }
+
+    //@InTestsMock(value = DTOClass.class, method = "createDTOClass", throwException = NullPointerException.class, decision = MockDecision.REQUIRED)
+    public boolean unsupported_throwException_NullPointerException2(DTOClass dto) {
+
+            return dto.createDTOClass().getFullName().equals("diffy");
+
     }
 
 

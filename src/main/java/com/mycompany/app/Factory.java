@@ -4,7 +4,7 @@ public class Factory extends SuperFactory {
 
 
 
-    public static DTOClass methodWithNoParams() {
+    public static DTOClass createDTOClass() {
 
         DTOClass dtoClass = new DTOClass();
 
@@ -12,7 +12,7 @@ public class Factory extends SuperFactory {
         return dtoClass;
     }
 
-    public static DTOClass methodWithNoParams2() {
+    public static DTOClass createDTOClass2() {
 
         DTOClass dtoClass = new DTOClass();
 
@@ -21,29 +21,29 @@ public class Factory extends SuperFactory {
     }
 
 
-    public static DTOClass methodWithParams(String s, String s2) {
-
-        DTOClass dtoClass = new DTOClass();
-
-        dtoClass.fullName = s+s2;
-        return dtoClass;
-    }
+//    public static DTOClass methodWithParams(String s, String s2) {
 //
-
-    public static DTOClass methodWithNoParams(Integer s) {
-        DTOClass dtoClass = new DTOClass();
-
-        dtoClass.fullName = s.toString();
-        return dtoClass;
-    }
-
-    public static DTOClass methodWithNoParams(String s) {
-        DTOClass dtoClass = new DTOClass();
-
-        dtoClass.fullName = s;
-        return dtoClass;
-    }
-
+//        DTOClass dtoClass = new DTOClass();
+//
+//        dtoClass.fullName = s+s2;
+//        return dtoClass;
+//    }
+////
+//
+//    public static DTOClass methodWithNoParams(Integer s) {
+//        DTOClass dtoClass = new DTOClass();
+//
+//        dtoClass.fullName = s.toString();
+//        return dtoClass;
+//    }
+//
+//    public static DTOClass methodWithNoParams(String s) {
+//        DTOClass dtoClass = new DTOClass();
+//
+//        dtoClass.fullName = s;
+//        return dtoClass;
+//    }
+//
 
 //    public static RuntimeException getRuntimeException() {
 //
