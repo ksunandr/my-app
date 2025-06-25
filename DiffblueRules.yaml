@@ -1,18 +1,7 @@
-#com.mycompany.app.DTOClass:
-#  - factory:
-#      method: com.mycompany.app.Factory.forTest2:(Ljava/lang/String;Ljava/lang/String;)
-
-#java.lang.StringBuilder:
-#  - factory:
-#      method: java.lang.StringBuilder.<init>
-#      params: [ "text" ]
-#  - factory:
-#      method: com.mycompany.app.DTOClass.<init>
-#      params: [ "1", "1"]
-
-
-
-
-#  - factory:
-#      method: com.mycompany.app.DTOClass.<init>:(Ljava/lang/String;Ljava/lang/String;).
-#      params: [ "1-56619-909-3" ]
+##com.mycompany.app.DTOClass:
+##  - factory:
+##      method: com.mycompany.app.Factory.createDTOClass4
+#
+com.mycompany.app.DTOClass:
+  - factory:
+      method: com.mycompany.app.DTOClass.<init>
