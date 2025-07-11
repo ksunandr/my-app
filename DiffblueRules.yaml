@@ -1,7 +1,4 @@
-##com.mycompany.app.DTOClass:
-##  - factory:
-##      method: com.mycompany.app.Factory.createDTOClass4
-#
 com.mycompany.app.DTOClass:
   - factory:
-      method: com.mycompany.app.DTOClass.<init>
+      method: com.mycompany.app.Factory.createDTOClass4(ILjava/lang/String;)
+      params: [ 1, "testString" ]
