@@ -7,7 +7,6 @@ import com.diffblue.cover.annotations.MockDecision;
 public class ClassUnderTest {
 
 
-
     public boolean ifFullNameIsDiffy(DTOClass dto) {
         return dto.getFullName().equals("diffy");
     }
