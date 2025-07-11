@@ -2,7 +2,6 @@ package com.mycompany.app;
 
 import com.diffblue.cover.annotations.InTestsMock;
 import com.diffblue.cover.annotations.MockDecision;
-import java.util.Locale;
 
 public class MockDecisionsToTest {
 
